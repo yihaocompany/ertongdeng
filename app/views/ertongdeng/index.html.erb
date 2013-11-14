@@ -1,0 +1,62 @@
+
+<section class="container clearfix">
+  <div class="page-header">
+     <h1 class="page-title cufon">联系我们</h1>
+    </div>
+  <div id="map"></div>
+  <div class="one-third">
+    <h3 class='cufon'><%=@C['_company']%></h3>
+    <address class='cufon'>
+      地址:    <%=@C['_address']%> <br />
+      手机:       <%=@C['_phone']%> <br />
+      传真:           <%=@C['_fax']%> <br />
+      邮件:          <%=@C['_email']%>      <br>
+      QQ:          <%=@C['_qq']%>      <br>
+      网址:          <%=@C['_url']%>      <br>
+      旺旺:          <%=@C['_ww']%>      <br>
+      淘宝店网址:          <%=@C['_wwurl']%>      <br>
+      拍拍店名:          <%=@C['_paipainame']%>      <br>
+      拍店网址:          <%=@C['_paipai']%>      <br>
+    </address>
+
+  </div><!--/ .one-third-->
+  <div class="two-third last">
+    <div id="contact">
+      <h3 class='cufon'>留言我们</h3>
+      <%=form_for :message,
+                  :url=> { :action => :create, :id=> @message },
+                  :html => { :class=>'contact-form cufon'} do |form| %>
+
+       <p class="input-block">
+        <label for="name"> 姓名: <span class="required">*</span><i>(必需)</i></label>
+
+         <%=form.text_field :user, :id=>'user' %>
+      </p>
+      <p class="input-block">
+        <label for="email">E-mail: <span class="required">*</span><i>(必需)</i></label>
+
+        <%=form.text_field :email, :id=>'email' %>
+      </p>
+      <p class="input-block">
+        <label for="web">QQ</label>
+        <%=form.text_field :qq ,:id=>'qq' %>
+      </p>
+      <p class="textarea-block">
+        <label for="message">留言:</label>
+
+        <%=form.text_area :content ,:id=>'message' %>
+      </p>
+      <p class="input-block">
+        <label class="enter-verify" for="verify">验证码: <span class="required">*</span><i>(必需)</i></label>
+        <input class="verify" type="text" name="verify" />
+      <img src='/verify'>
+      </p>
+      <p class="row">
+        <%=form.submit '确定留言', :class=>'button gray',   :id=>'submit' %>
+      </p>
+      <%end%>
+    </div><!--/ contact-->
+
+  </div><!--/ .two-third .last-->
+
+</section><!--/.container -->

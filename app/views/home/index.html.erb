@@ -1,0 +1,326 @@
+<section class="container sbr clearfix">
+
+
+
+<div id="slider" class="flexslider clearfix">
+
+  <ul class="slides">
+
+
+    <%   @ad.each do |item| %>
+
+        <li>
+          <%=image_tag item.adpath,:alt=>item.adtitle %>
+          <div class="flex-caption">
+            <h4 class='cufon'>
+              <a href="<%=item.adurl%>"><%=item.adtitle%></a></h4>
+            <p class='cufon'><%=item.addescription%></p>
+          </div>
+        </li>
+
+
+  <% end
+
+    %>
+
+
+
+
+  </ul>
+
+
+
+
+
+</div><!--/ #slider-->
+
+<!-- - - - - - - - - - - end Slider - - - - - - - - - - - - - -->
+
+<ul class="block-with-icons clearfix cufon">
+  <li class="b1">
+    <a href="#">
+      <h5>小孩子品牌介绍</h5>
+      <span>Adipiscing tincidunt malesuada.</span>
+    </a>
+  </li>
+  <li class="b2">
+    <a href="#">
+      <h5>淘宝代理</h5>
+      <span>Adipiscing tincidunt malesuada.</span>
+    </a>
+  </li>
+  <li class="b3">
+    <a href="#">
+      <h5>淘宝培训</h5>
+      <span>Adipiscing tincidunt malesuada.</span>
+    </a>
+  </li>
+</ul><!--/ .block-with-icons-->
+<!-- - - - - - - - - - - - - - - Content - - - - - - - - - - - - - - - - -->
+
+<section id="content">
+
+  <article class="post-item clearfix">
+
+    <a href="single-post.html">
+      <h3 class="title">
+        Suspendisse potenti  nullam consectetur, metus vestibulum urna ipsum fringilla velit felis vitae ante.
+      </h3><!--/ .title -->
+    </a>
+
+    <section class="post-meta clearfix">
+
+      <div class="post-date"><a href="#">June 15, 2012</a></div><!--/ .post-date-->
+      <div class="post-tags">
+        <a href="#">News</a>
+        <a href="#">Events</a>
+        <a href="#">People</a>
+      </div><!--/ .post-tags-->
+      <div class="post-comments"><a href="#">5 Comments</a></div><!--/ .post-comments-->
+
+    </section><!--/ .post-meta-->
+
+
+
+    <a class="single-image" href="images/gallery/fullscreen/04.jpg">
+      <%=image_tag 'gallery/fullscreen/04.jpg',:class => 'custom-frame'%>
+
+    </a>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing tincidunt malesuada. Aenean metus lorem, lacinia est.
+      Maecenas sit amet magna eget rhoncus imperdiet. Quisque consectetur lacinia felis, posumassa fermentum vel.
+      Morbi metus nibh, tincidunt ac luctus hendrerit, iaculis sed velit.
+    </p>
+
+    <a href="single-post.html" class="button gray">Read More &rarr;</a>
+
+  </article><!--/ .post-item-->
+
+  <article class="post-item clearfix">
+
+    <a href="single-post.html">
+      <h3 class="title">Potenti  nullam consectetur urna ipsum</h3><!--/ .title -->
+    </a>
+
+    <section class="post-meta clearfix">
+
+      <div class="post-date"><a href="#">June 15, 2012</a></div><!--/ .post-date-->
+      <div class="post-tags">
+        <a href="#">News</a>
+      </div><!--/ .post-tags-->
+      <div class="post-comments"><a href="#">5 Comments</a></div><!--/ .post-comments-->
+
+    </section><!--/ .post-meta-->
+
+    <a class="single-image" href="images/gallery/fullscreen/02.jpg">
+
+      <%=image_tag 'gallery/fullscreen/02.jpg',:class => 'custom-frame'%>
+
+    </a>
+
+    <p>
+      Lorem ipsum dolor amet, consectetur adipidunt malesuada. Aenean metus lorem, cus imperdiet.
+      Quisque consectetur lacinia felis.
+    </p>
+
+    <a href="single-post.html" class="button gray">Read More &rarr;</a>
+
+  </article><!--/ .post-item-->
+
+  <article class="post-item clearfix">
+
+    <a href="single-post.html">
+      <h3 class="title">Nullam quis risus eget urna mollis ornare vel</h3><!--/ .title -->
+    </a>
+
+    <section class="post-meta clearfix">
+
+      <div class="post-date"><a href="#">June 15, 2012</a></div><!--/ .post-date-->
+      <div class="post-tags">
+        <a href="#">News</a>
+      </div><!--/ .post-tags-->
+      <div class="post-comments"><a href="#">5 Comments</a></div><!--/ .post-comments-->
+
+    </section><!--/ .post-meta-->
+
+    <a class="single-image" href="images/gallery/fullscreen/05.jpg">
+
+      <%=image_tag 'gallery/fullscreen/03.jpg',:class => 'custom-frame'%>
+
+    </a>
+
+    <p>
+      Lorem ipsum dolor amet, consectetur adipidunt malesuada. Aenean metus lorem, cus imperdiet.
+      Quisque consectetur lacinia felis.
+    </p>
+
+    <a href="single-post.html" class="button gray">Read More &rarr;</a>
+
+  </article><!--/ .post-item-->
+
+  <article class="post-item clearfix">
+
+    <a href="single-post.html">
+      <h3 class="title">Potenti  nullam consectetur urna ipsum fringilla</h3><!--/ .title -->
+    </a>
+
+    <section class="post-meta clearfix">
+
+      <div class="post-date"><a href="#">June 15, 2012</a></div><!--/ .post-date-->
+      <div class="post-tags">
+        <a href="#">News</a>
+      </div><!--/ .post-tags-->
+      <div class="post-comments"><a href="#">5 Comments</a></div><!--/ .post-comments-->
+
+    </section><!--/ .post-meta-->
+
+    <a class="single-image" href="images/gallery/fullscreen/06.jpg">
+      <%=image_tag 'gallery/fullscreen/04.jpg',:class => 'custom-frame'%>
+    </a>
+
+    <p>
+      Lorem ipsum dolor amet, consectetur adipidunt malesuada. Aenean metus lorem, cus imperdiet.
+      Quisque consectetur lacinia felis.
+    </p>
+
+    <a href="single-post.html" class="button gray">Read More &rarr;</a>
+
+  </article><!--/ .post-item-->
+
+  <article class="post-item clearfix">
+
+    <a href="single-post.html">
+      <h3 class="title">How to use Quick Donate nullam consectetur</h3><!--/ .title -->
+    </a>
+
+    <section class="post-meta clearfix">
+
+      <div class="post-date"><a href="#">June 15, 2012</a></div><!--/ .post-date-->
+      <div class="post-tags">
+        <a href="#">News</a>
+      </div><!--/ .post-tags-->
+      <div class="post-comments"><a href="#">5 Comments</a></div><!--/ .post-comments-->
+
+    </section><!--/ .post-meta-->
+
+    <a class="single-image" href="images/gallery/fullscreen/03.jpg">
+      <%=image_tag 'blog/post-5.jpg',:class => 'custom-frame'%>
+    </a>
+
+    <p>
+      Lorem ipsum dolor amet, consectetur adipidunt malesuada. Aenean metus lorem, cus imperdiet.
+      Quisque consectetur lacinia felis.
+    </p>
+
+    <a href="single-post.html" class="button gray">Read More &rarr;</a>
+
+  </article><!--/ .post-item-->
+
+</section><!--/ #content-->
+
+
+
+<aside id="sidebar">
+
+  <div class="widget-container eventsListWidget">
+
+    <h5 class="cufon">最新资讯</h5>
+
+    <ul>
+
+      <li>
+        <a href="#"><h6>Suspendisse Potenti Consectetur</h6></a>
+        <span class="widget-date">June 15, 2012</span>
+
+      </li>
+      <li>
+        <a href="#"><h6>Mauris Vitae Adipiscing et Urna</h6></a>
+        <span class="widget-date">June 14, 2012</span>
+      </li>
+      <li>
+        <a href="#"><h6>Donec Blandit Luctus Diam</h6></a>
+        <span class="widget-date">June 13, 2012</span>
+      </li>
+
+    </ul>
+
+  </div><!--/ .widget-container-->
+
+  <div class="widget-container widget_video">
+
+    <h5 class="cufon">按装过程</h5>
+
+    <div class="video-widget">
+      <iframe class="custom-frame" width="290" height="200" src="http://www.youtube.com/embed/jilRF0mocRQ?wmode=transparent" frameborder="0"></iframe>
+      <br><allowfullscreen></allowfullscreen>
+    </div><!--/ .video-widget-->
+
+    <div class="video-entry">
+      <a href="#" class="video-title">
+        <h5>Potenti Nullam Consectetur Urna Ipsum Fringilla</h5>
+      </a>
+    </div><!--/ .video-entry-->
+
+  </div><!--/ .widget-container-->
+
+  <div class="widget-container widget_categories">
+
+    <h3 class="widget-title">Categories</h3>
+
+    <ul>
+
+      <li><a href="#">Politic News</a></li>
+      <li><a href="#">Responsive Wordpress</a></li>
+      <li><a href="#">Upcoming Events</a></li>
+
+    </ul>
+
+  </div><!--/ .widget-container-->
+
+  <div class="widget-container widget_facebook">
+
+    <h3 class="widget-title">Become a Facebook Fan</h3>
+
+    <div class="fb-like-box" data-href="http://www.facebook.com/pages/ThemeMakers/273813622709585" data-width="300" data-show-faces="true" data-stream="true" data-header="true"></div>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  </div><!--/ .widget-container-->
+
+  <div class="widget-container widget_popular_posts">
+
+    <h3 class="widget-title">Popular Posts</h3>
+
+    <ul>
+
+      <li>
+        <a href="#"><h6>Curabitur Posuere Nisl</h6></a>
+        <span class="widget-date">June 15, 2012, 5 Comments</span>
+      </li>
+      <li>
+        <a href="#"><h6>Vivamus Consequat Pellentesque</h6></a>
+        <span class="widget-date">June 15, 2012, 5 Comments</span>
+      </li>
+      <li>
+        <a href="#"><h6>Donec Blandit Luctus Diam</h6></a>
+        <span class="widget-date">June 15, 2012, 5 Comments</span>
+      </li>
+
+    </ul>
+
+  </div><!--/ .widget-container-->
+
+</aside><!--/ #sidebar-->
+
+<!-- - - - - - - - - - - - - end Sidebar - - - - - - - - - - - - - - - - -->
+
+</section><!--/.container -->

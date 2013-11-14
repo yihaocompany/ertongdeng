@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!--[if IE 7]>					<html class="ie7 no-js" lang="en">     <![endif]-->
+<!--[if lte IE 8]>              <html class="ie8 no-js" lang="en">     <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="not-ie no-js" lang="en">  <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title><%=@C['_title']%></title>
+  <meta name="description" content="<%=@C['_description']%>" />
+  <meta name="keywords" content="<=@C['_keywords']%>" />
+  <%=favicon_link_tag 'favicon.png'  %>
+  <%=stylesheet_link_tag 'style' %>
+  <%=stylesheet_link_tag 'style'%>
+  <%=stylesheet_link_tag 'flexslider'%>
+  <%=stylesheet_link_tag 'jquery.fancybox'%>
+  <!-- HTML5 Shiv -->
+  <%=javascript_include_tag 'modernizr.custom'%>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body class="style-<%=@C['_template']%>">

@@ -1,0 +1,3 @@
+module ErtongdengBlogHelper
+
+end

@@ -1,0 +1,96 @@
+<header id='header' class='clearfix'>
+  <a href='index.html' id='logo'>
+    <%=image_tag @C['_logo'], 'title'=>@C['_title']%>
+  </a>
+  <ul class='social-links clearfix'>
+    <li class='twitter'><a href='#'>Twitter<span></span></a></li>
+    <li class='facebook'><a href='#'>Facebook<span></span></a></li>
+    <li class='dribbble'><a href='#'>Dribbble<span></span></a></li>
+    <li class='vimeo'><a href='#'>Vimeo<span></span></a></li>
+    <li class='youtube'><a href='#'>YouTube<span></span></a></li>
+    <li class='rss'><a href='#'>Rss<span></span></a></li>
+  </ul>
+  <nav id='navigation' class='navigation cufon'>
+    <ul>
+      <li class='current'> <%= link_to '首页', {:controller => 'home', :action => 'index'}, {:title => '首页'} %> </li>
+      <li>
+        <%=link_to '关于我们'  ,{:controller=>'ertongdeng_zixu', :action => 'index'}    %>
+        <ul>
+         <% @articletype.each do |item|%>
+                <% if item.belongid==1 %>
+                  <li>
+                    <%=link_to   item.name,{:controller=>'ertongdeng_zixu', :action => 'index'},{:title => item.description}  %>
+                  </li>
+               <% end %>
+          <% end %>
+        </ul>
+      </li>
+      <li>
+        <%=link_to '资讯'  ,{:controller=>'ertongdeng_zixu', :action => 'index'}    %>
+        <ul>
+          <% @articletype.each do |item|%>
+              <% if item.belongid==5 %>
+                  <li>
+                    <%=link_to   item.name,{:controller=>'ertongdeng_zixu', :action => 'index'},{:title => item.description}  %>
+                  </li>
+              <% end %>
+          <% end %>
+        </ul>
+      </li>
+
+
+      <li>
+        <%=link_to '淘宝代发'  ,{:controller=>'ertongdeng_zixu', :action => 'index'}    %>
+        <ul>
+          <% @articletype.each do |item|%>
+              <% if item.belongid==9 %>
+                  <li>
+                    <%=link_to   item.name,{:controller=>'ertongdeng_zixu', :action => 'index'},{:title => item.description}  %>
+                  </li>
+              <% end %>
+          <% end %>
+        </ul>
+      </li>
+      <li>
+        <%=link_to '小孩子儿童灯'  ,{:controller=>'ertongdeng', :action => 'xiaohaizi'}    %>
+
+        <ul>
+
+          <% @ertongdengtype.each do |item|%>
+
+              <li>
+                <%=link_to   item.name,{:controller=>'ertongdeng', :action => 'xiaohaizi'},{:title => item.description}  %>
+              </li>
+
+          <% end %>
+
+
+
+        </ul>
+      </li>
+      <li>
+         <%=link_to '留言'  ,{:controller => 'ertongdeng_liuyan',:action => 'index'},{:title => '对公司儿童灯,吊灯,壁灯的需要请留言'} %>
+
+
+      </li>
+      <li>
+        <%= link_to '公司博客', {:controller => 'ertongdeng_blog'}, {:title => '公司博客,公司创办在创建小孩子儿童中的所写的'} %>
+      <ul>
+         <% @blogtype.each do |item|%>
+            <li>
+              <%= link_to item.name, {:controller => 'ertongdeng_blog'}, {:title => '公司博客,公司创办在创建小孩子儿童中的所写的'} %>
+
+            </li>
+        <% end %>
+
+      </ul>
+    </li>
+
+      <li> <%= link_to '联系我们', {:controller => 'ertongdeng', :action => 'index'}, {:title => '联系我们'} %> </li>
+    </ul>
+
+    <a href='#' class='donate'>淘宝数据包</a>
+
+  </nav><!--/ #navigation-->
+
+</header><!--/ #header-->
